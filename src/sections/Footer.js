@@ -168,14 +168,14 @@ const Footer = () => {
             data-scroll-speed="-2"
             data-scroll-direction="horizontal"
           >
-            Made with &hearts; by &nbsp;
-            <a
+            {/* Made with &hearts; by &nbsp; */}
+            {/* <a
               href="https://youtube.com/codebucks"
               target="_blank"
               rel="noreferrer"
             >
               CodeBucks
-            </a>
+            </a> */}
           </span>
         </Bottom>
       </FooterComponent>

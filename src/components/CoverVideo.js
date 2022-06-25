@@ -43,7 +43,7 @@ const Title = styled(motion.div)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: ${(props) => props.theme.text};
+  color: green;
 
   div {
     display: flex;
@@ -180,7 +180,7 @@ const CoverVideo = () => {
           data-scroll-delay="0.04"
           data-scroll-speed="2"
         >
-          Inspire. Create. Belive
+          Always. Next. To you
         </motion.h2>
       </Title>
       {/* <video src={MainVideo} type="video/mp4" autoPlay muted loop /> */}

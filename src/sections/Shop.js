@@ -38,7 +38,7 @@ const Title = styled.h1`
   color: ${(props) => props.theme.text};
   position: absolute;
   top: 1rem;
-  left: 5%;
+  left: 3%;
   z-index: 11;
 
   @media (max-width: 64em) {
@@ -108,7 +108,7 @@ const Right = styled.div`
 `;
 
 const Item = styled(motion.div)`
-  width: 20rem;
+  width: 10rem;
   margin-right: 6rem;
 
   display: flex;
@@ -205,7 +205,7 @@ const Shop = () => {
   return (
     <Section ref={ref} id="shop">
       <Title data-scroll data-scroll-speed="-1">
-        New Collection
+        Our partners
       </Title>
       <Left>
         <p>

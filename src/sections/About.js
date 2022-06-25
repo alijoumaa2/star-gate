@@ -24,7 +24,7 @@ const Title = styled.h1`
   font-size: ${(props) => props.theme.fontBig};
   font-family: "Kaushan Script";
   font-weight: 300;
-
+  color: #2a6532;
   position: absolute;
   top: 1rem;
   left: 5%;
@@ -124,9 +124,9 @@ const About = () => {
         data-scroll-speed="-2"
         data-scroll-direction="horizontal"
       >
-        About Us
+        Our mission
       </Title>
-      <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
+      <Left >
         We're fashion studio based in california. We create unique designs that
         will blow your mind. We also design unique jewellary pieces. Fashion is
         an ART that can not be grasped by everyone.
@@ -144,7 +144,7 @@ const About = () => {
       </Left>
       <Right>
         <img src={img1} alt="About Us" />
-        <img
+        {/* <img
           data-scroll
           data-scroll-speed="5"
           src={img2}
@@ -157,7 +157,7 @@ const About = () => {
           src={img3}
           alt="About Us"
           className="small-img-2"
-        />
+        /> */}
       </Right>
     </Section>
   );

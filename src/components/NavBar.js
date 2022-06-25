@@ -41,9 +41,9 @@ const MenuItems = styled(motion.ul)`
 `;
 
 const MenuBtn = styled.li`
-  background-color: ${(props) => `rgba(${props.theme.textRgba}, 0.7)`};
+  background-color:#3d8b1e;
   list-style-type: style none;
-  color: ${(props) => props.theme.body};
+  color: white;
   width: 15rem;
   height: 2.5rem;
 

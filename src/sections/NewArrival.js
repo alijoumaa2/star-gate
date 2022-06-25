@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-
+import Product from "../components/Product";
 import img1 from "../assets/Images/11.webp";
 import img2 from "../assets/Images/12.webp";
 import img3 from "../assets/Images/13.webp";
@@ -91,7 +91,7 @@ const Container = styled.div`
   transform: translate(-50%, 0);
   width: 25vw;
   height: auto;
-
+  }
   /* width: 65%; */
   display: flex;
   flex-direction: column;
@@ -109,27 +109,7 @@ const Container = styled.div`
   }
 `;
 
-const Item = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0;
-  img {
-    width: 100%;
-    height: auto;
-    z-index: 5;
-  }
-`;
 
-const Product = ({ img, title = "" }) => {
-  return (
-    <Item>
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-    </Item>
-  );
-};
 
 const NewArrival = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -193,9 +173,9 @@ const NewArrival = () => {
     <Section ref={ref} id="new-arrival">
       <Overlay />
       <Title
-        data-scroll
-        data-scroll-speed="-2"
-        data-scroll-direction="horizontal"
+        // data-scroll
+        // data-scroll-speed="-2"
+        // data-scroll-direction="horizontal"
       >
         New Arrivals
       </Title>
@@ -207,7 +187,10 @@ const NewArrival = () => {
         <Product img={img4} title="T-shirts" />
       </Container>
 
-      <Text data-scroll data-scroll-speed="-4">
+      <Text 
+      // data-scroll 
+      // data-scroll-speed="-4"
+      >
         There is new collection available for cool clothes in all sizes. This
         collection is a great way to find a new look for you. It offers a
         variety of cool apparel styles to fit your taste, while you can also
